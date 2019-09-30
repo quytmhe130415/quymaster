@@ -29,7 +29,7 @@
     function loadPage(page) {
         $('#content').html('')
         $.ajax({
-            url: 'http://localhost:3000/api/v1/1' + page
+            url: '/api/v1/1' + page
         }).then(function(res) {
             res.data.forEach(function(item) {
                 console.log(item)
