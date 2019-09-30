@@ -23,6 +23,6 @@ server.get('/home', function(req, res, next) {
 })
 
 
-server.listen(3000, () => {
-    console.log('Dang lang nghe 3000!');
+server.listen(process.env.PORT || 3000, () => {
+    console.log('Dang lang nghe 3000!' + this.address().port);
 })
